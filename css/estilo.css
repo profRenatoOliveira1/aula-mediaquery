@@ -1,0 +1,58 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cada item no grid */
+  .item {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 4px;
+  }
+  
+  /* Diferencia os itens por cor */
+  .item-1 {
+    background-color: #007bff;
+  }
+  
+  .item-2 {
+    background-color: #28a745;
+  }
+  
+  .item-3 {
+    background-color: #ffc107;
+  }
+  
+  /* Layout flexível em telas menores */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .item {
+      flex: none; /* Permite o ajuste automático */
+    }
+  }
+  
